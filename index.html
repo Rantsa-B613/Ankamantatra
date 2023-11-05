@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- LIEN DES FICHIER EXTERNE -->
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- POLICES -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- ICONE -->
+</head>
+<body>
+  <audio controls autoplay loop id="AudioQuizz">
+    <source src="AUDIO/0.mp3" type="audio/mpeg" >
+  </audio>
+    <!-- PAGE D'ACEEUIL DU QUIZZ -->
+    <main>
+        <div id="Quizz" class="container-fluid">
+            <div id="QuizzNameAndLogo" class="container">
+                <div id="contenueHome" class="container">
+                    <img id="imageLogo" src="LOGO/Logo.png" >
+                    <button id="ButtonLogo" class="btn  text-black" style="font-family: 'Montserrat';" >KILALAO</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- CHOIX DU QUIZZ  -->
+    <div>
+        <div  id="SelectionDeQuizz">
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="barDeNavigation" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div id="QuizzChoice" class="container">
+                    <button id="ButtonQuiz01" class="btn  text-dark col-12 espace01 ButtonQuiz" style="font-family: 'Montserrat'; background-color: #cefb00;" >SARY IRAY TENY IRAY</button>
+                    <button id="ButtonQuiz02" class="btn  text-dark col-12 espace01 ButtonQuiz" style="font-family: 'Montserrat'; background-color: #fbf600;" >ANKAMANTATRA</button>
+                    <button id="ButtonQuiz03" class="btn  text-dark col-12 espace01 ButtonQuiz" style="font-family: 'Montserrat'; background-color: #fb6000;" >SARY EFATRA TENY IRAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFORMATION DU QUIZ -->
+    <!-- SARY IRAY TENY IRAY -->
+    <div id="SaryIrayTenyIray">
+        <div id="inforamtion" class="container" style="background-color: #cefb00;">
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="retour01" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+                </div>
+            </nav>
+            <div id="contenueInformation" class="container">
+                <div class="card border-0 text-light" >
+                    <div class="card-body" style="background-color:#cefb00; font-family: 'Montserrat'">
+                      <h5 class="card-title text-center" style="font-size: 30px;">SARY IRAY TENY IRAY</h5>
+                      <p class="card-text text-dark">Misy sary aseho ary mila fantarina inona ilay sary .<br>Fahasarotana : Mora<br>Fanontaniana : 10</p>
+                      <a id="BoutonEnyVOalohany" href="#" class="btn bg-warning">ENY ARY !</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- ANKAMANTATRA -->
+    <div id="Ankamantatra">
+        <div id="inforamtion" class="container" style="background-color: #fbf600;">
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="retour02" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+                </div>
+            </nav>
+            <div id="contenueInformation" class="container">
+                <div class="card border-0 text-light" >
+                    <div class="card-body" style="background-color:#fbf600; font-family: 'Montserrat'">
+                      <h5 class="card-title text-center" style="font-size: 30px;">ANKAMANTATRA</h5>
+                      <p class="card-text text-dark">kilalao Ankamantatra, misy fanontaniana ary misy valiny efatra afaka isafidianana, any amin'ny farany no misy filazana fa firy ny safidy marina nataonao .<br>Fahasarotana : Antoniny<br>Fanontaniana : 15</p>
+                      <a id="BoutonEnyFaharoa" href="#" class="btn  bg-warning">ENY ARY !</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- SARY IRAY TENY EFATRA -->
+    <div id="SaryIrayTenyEfatra">
+        <div id="inforamtion" class="container" style="background-color: #fb6000;">
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="retour03" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+                </div>
+            </nav>
+            <div id="contenueInformation" class="container">
+                <div class="card border-0 text-light" >
+                    <div class="card-body" style="background-color:#fb6000; font-family: 'Montserrat'">
+                      <h5 class="card-title text-center" style="font-size: 30px;">SARY EFATRA TENY IRAY</h5>
+                      <p class="card-text text-dark">Misy sary efatra aseho ary mila fantarina inona no ifandraisany ireo sary ireo <br>Fahasarotana : Sarotra<br>Fanontaniana : 10</p>
+                      <a id="BoutonEnyFahatelo" href="#" class="btn  bg-warning">ENY ARY !</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- QUIZZ 01 SARY IRAY TENY IRAY -->
+    <audio controls autoplay id="AudioQuizzSR">
+      <source src="AUDIO/0.mp3" type="audio/mpeg" preload="auto">
+    </audio>
+    <div id="QuizzSaryIrayTenyIray">
+        <div>
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="retour04" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container" style="background-color:#cefb00; margin-top: 150px; width: 510px; height: auto; margin-bottom: 100px;">
+                <div id="ilayQuizz01">
+                    <div class="text-center" style="height: 300px; width: 400px; margin: 0 auto; padding-top: 50px;">
+                        <div class="card border-0" style="background-color:#cefb00;">
+                            <div class="card-body">
+                              <h5 class="card-title text-light">SARY IRAY TENY IRAY</h5>
+                            </div>
+                            <img src="IMG/SARYIRAYTENYIRAY/01.jpg" class="card-img-bottom" id="question-img">
+                        </div>
+                    </div>
+                    <form style="margin-top: 275px;" class="container text-center" >
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="question1" required>
+                      </div>
+                      <button type="button" class="btn btn-warning" id="submit" style="margin-top: 30px; margin-bottom: 30px;">HANAMARINA</button>
+                    </form>
+                </div>
+            </div>
+            <div id="tapitraQuizz01" class="container">
+                <div class="card border-0" style="background-color:#cefb00;">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">SARY IRAY TENY IRAY</h5>
+                      <p class="text-dark" style="font-family: 'Montserrat'; padding-bottom: 30px;" > TAPITRA ! Misaotra nanandrana ity kilalao ity .<br> raha toa ka iveriana ilalao kitio ilay logo @ tampony ankaviha .</p>
+                    </div>
+                </div>  
+            </div>
+              <script>
+                  // AUDIO DU QUIZZ
+                  const AudioeachSR = document.getElementById("AudioQuizzSR");
+                  const tableauSR = [
+                      { audio: "AUDIO/OK.mp3"},
+                  ];
+                function testfin01() {
+                    let contenueQuizz01 = document.getElementById("ilayQuizz01");
+                    contenueQuizz01.style.display = "none";
+                    let resultQUizz01 = document.getElementById("tapitraQuizz01");
+                    resultQUizz01.style.display = "block";
+                }
+                // TABLEUA des questions et réponses
+                const questions = [
+                  { image: "IMG/SARYIRAYTENYIRAY/01.jpg", reponse: "ALIKA" },
+                  { image: "IMG/SARYIRAYTENYIRAY/02.jpg", reponse: "SOLOMASO" },
+                  { image: "IMG/SARYIRAYTENYIRAY/03.jpg", reponse: "TAKAMOA" },
+                  { image: "IMG/SARYIRAYTENYIRAY/04.jpg", reponse: "RAKIBOLANA" },
+                  { image: "IMG/SARYIRAYTENYIRAY/05.jpg", reponse: "ANGIDIMBY" },
+                  { image: "IMG/SARYIRAYTENYIRAY/06.jpg", reponse: "FOTADREVO" },
+                  { image: "IMG/SARYIRAYTENYIRAY/07.jpg", reponse: "MPIKAJY" },
+                  { image: "IMG/SARYIRAYTENYIRAY/08.jpg", reponse: "TONDRO AVARATRA" }
+                ];
+            
+                // Index de la question actuelle
+                let currentQuestion = 0;
+                const imgElement = document.getElementById("question-img");
+                const inputField = document.getElementById("question1");
+            
+                // Fonction pour afficher la question suivante
+                function afficherQuestionSuivante() {
+                  const reponseUtilisateur = inputField.value.toUpperCase();
+                  if (reponseUtilisateur === questions[currentQuestion].reponse) {
+                    // Réponse correcte, passer à la question suivante
+                    currentQuestion++;
+                    AudioeachSR.src = tableauSR[0].audio;
+                    if (currentQuestion < questions.length) {
+                      imgElement.src = questions[currentQuestion].image;
+                      inputField.value = "";
+                    } 
+                    else {
+                      // Fin du quizz
+                      testfin01();
+                    }
+                  } 
+                  else {
+                    // Réponse incorrecte
+                    imgElement.src = questions[currentQuestion].image;
+                    inputField.value = "";
+                  }
+                }
+            
+                // Ajouter un gestionnaire d'événements pour le bouton de validation
+                const submitButton = document.getElementById("submit");
+                submitButton.addEventListener("click", afficherQuestionSuivante);
+                const form = document.querySelector('form');
+                form.addEventListener('keydown', function(event) {
+                  if (event.key === 'Enter') {
+                    event.preventDefault(); // empêche le formulaire d'être soumis
+                    submitButton.click(); // déclenche le clic sur le bouton
+                  }
+                });
+              </script>
+        </div>
+    </div>
+
+
+
+    <!-- QUIZZ 02 ANKAMANTATRA -->
+    <audio controls autoplay id="AudioQuizzA">
+      <source src="AUDIO/0.mp3" type="audio/mpeg" >
+    </audio>
+    <style>
+      #texteankamantatra {
+      width: 500px;
+      }
+      #choices {
+      margin-left: 80px;
+      }
+      @media only screen and (max-width: 478px) {
+        #texteankamantatra {
+        width: 350px;
+        margin-right: 100px;
+        }
+        #choices {
+        margin-left: 15px;
+        }
+      }
+    </style>
+    <div id="QuizzAnakamantatra">
+        <nav id="barDeNavigation" class="navbar container-fluid" style="margin-bottom: 200px; width: auto; padding-right: 500px;">
+            <div class="container-fluid">
+                <div>
+                    <a id="retour05" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                </div>
+            </div>
+        </nav>
+        <div id="texteankamantatra" class="container" style="height: 120px; top: 500px; margin: 0 auto; background-color: #fbf600; border-radius: 10px; padding-top: 20px;">
+          <h1 class="text-center text-light" style="font-family: 'Montserrat';">ANKAMANTATRA</h1>
+          <p  class="text-center text-dark" style="font-family: 'Montserrat';" id="question" ></p>
+          <div style="margin-top: 50px; " id="choices" class="btn-group-horizontal"></div>
+          <p id="score" style="font-family: 'Montserrat';"></p>
+        </div>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+          // AUDIO DU QUIZZ
+          const AudioeachA = document.getElementById("AudioQuizzA");
+          const tableauA = [
+              { audio: "AUDIO/FIN.mp3"},
+          ];
+          // Définition des questions et des réponses
+          const questions01 = [
+            { question: "Dobokelin'Andriamanitra tsy azo hilomanosana?", choices: ["Maso", "Setroka", "Siny be an-drano", "Lakana"], answer: "Maso" },
+            { question: "Tsy omby, tsy ondry nefa mahalala ny maintso hohanina", choices: ["Ranomiangona", "sakay", "Ranomandry", "Reny rano"], answer: "Ranomandry" },
+            { question: "Mihiratra tsy mahita azy, mikimpy vao mahita azy ?", choices: ["Volana", "Rivotra", "Heritreritra", "Nofy"], answer: "Nofy" },
+            { question: "Solabe minaonaona ?", choices: ["Trano", "Trimo Be", "Aponga", "Vilany"], answer: "Aponga" },
+            { question: "Akana vao mitombo ?", choices: ["Rano", "Afo", "Vary", "Olona"], answer: "Afo" },
+            { question: "Aleveno aho haka ny taolako taloha ?", choices: ["Mizana", "Angady", "Soanjo", "Katsaka"], answer: "Katsaka" },
+            { question: "Bataina tsy zaka, afindra mora foana ?", choices: ["Hora", "Kitana", "Aloka", "Vitsika"], answer: "Aloka" },
+            { question: "Ilay boka mitaingin-tseza ?", choices: ["Mananasy", "Kofafa", "Akondro", "Lakana"], answer: "Mananasy" },
+            { question: "Andrahoin-tsy masaka, atono mora foana ?", choices: ["Vary", "Volo", "Rano", "Tany"], answer: "Volo" },
+            { question: "Ny ray aman-dreny mitsangana, ny zanaka mitsivalana ? ", choices: ["Lalana", "Setroka", "Tohatra", "Bozaka"], answer: "Tohatra" }
+          ];
+      
+          let currentQuestion01 = 0;
+          let score = 0;
+          const questionEl = document.getElementById("question");
+          const choicesEl = document.getElementById("choices");
+          const scoreEl = document.getElementById("score");
+      
+          function displayCurrentQuestion() {
+            const q = questions01[currentQuestion01];
+            questionEl.textContent = q.question;
+            choicesEl.innerHTML = "";
+            for (let i = 0; i < q.choices.length; i++) {
+              const choice = q.choices[i];
+              const button = document.createElement("button");
+              button.textContent = choice;
+              button.classList.add("btn", "choice-btn", "boutonSafidy", "bg-warning");
+              button.addEventListener("click", function() {
+                if (choice === q.answer) {
+                  score++;
+                }
+                currentQuestion01++;
+                if (currentQuestion01 >= questions01.length) {
+                  questionEl.textContent = "TAPITRA ! nanamarina " + score + " tamin'ireo Anakamantatra 10.";
+                  choicesEl.innerHTML = "";
+                  AudioeachA.src = tableauA[0].audio;
+                  return;
+                }
+                displayCurrentQuestion();
+              });
+              choicesEl.appendChild(button);
+            }
+          }
+      
+          displayCurrentQuestion();
+        </script>
+    </div>
+
+
+    <!-- QUIZZ 03 SARY IRAY TENY EFATRA -->
+    <audio controls autoplay id="AudioQuizzSE">
+      <source src="AUDIO/0.mp3" type="audio/mpeg" preload="auto">
+    </audio>
+    <div id="QuizzSaryIrayTenyEfatra">
+        <div>
+            <nav id="barDeNavigation" class="navbar fixed-top container-fluid">
+                <div class="container-fluid">
+                    <div>
+                        <a id="retour06" href="#"><img src="LOGO/puzzle.jpg" style="height: 90px;"></a>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container" style="background-color:#fb6000; margin-top: 150px; width: 510px; height: auto; margin-bottom: 100px;">
+                <div id="ilayQuizz">
+                    <div class="text-center" style="height: 300px; width: 400px; margin: 0 auto; padding-top: 50px;">
+                        <div class="card border-0" style="background-color:#fb6000;">
+                            <div class="card-body">
+                              <h5 class="card-title text-light">SARY EFATRA TENY IRAY</h5>
+                            </div>
+                            <img src="IMG/SARYEFATRATENYIRAY/02.jpeg" class="card-img-bottom" id="sary">
+                        </div>
+                    </div>
+                    <form id="form02" style="margin-top: 275px;" class="container text-center" >
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="valiny" required>
+                      </div>
+                      <button type="button" class="btn btn-warning" id="marina" style="margin-top: 10px; margin-bottom: 30px;">HANAMARINA</button>
+                    </form>
+                </div>
+                <div id="tapitraQuizz">
+                    <div class="card border-0" style="background-color:#fb6000;">
+                        <div class="card-body">
+                          <h5 class="card-title text-light">SARY EFATRA TENY IRAY</h5>
+                          <p class="text-dark" style="font-family: 'Montserrat'; padding-bottom: 30px;" > TAPITRA ! Misaotra nanandrana ity kilalao ity .<br> raha toa ka iveriana ilalao kitio ilay logo @ tampony ankaviha .</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+              <script>
+                  // AUDIO DU QUIZZ
+                  const AudioeachSE = document.getElementById("AudioQuizzSE");
+                  const tableauSE = [
+                      { audio: "AUDIO/OK.mp3"},
+                  ];
+                function testfin() {
+                    let contenueQuizz = document.getElementById("ilayQuizz");
+                    contenueQuizz.style.display = "none";
+                    let resultQUizz = document.getElementById("tapitraQuizz");
+                    resultQUizz.style.display = "block";
+                }
+                // TABLEUA des questions et réponses
+                const questionsDEUX = [
+                  { image: "IMG/SARYEFATRATENYIRAY/02.jpeg", reponse: "MAVO" },
+                  { image: "IMG/SARYEFATRATENYIRAY/04.jpeg", reponse: "KAMO" },
+                  { image: "IMG/SARYEFATRATENYIRAY/05.jpeg", reponse: "MARAINA" },
+                  { image: "IMG/SARYEFATRATENYIRAY/01.jpeg", reponse: "TENDROMBOHITRA" },
+                  { image: "IMG/SARYEFATRATENYIRAY/03.jpeg", reponse: "HERITRERITRA" },
+                  { image: "IMG/SARYEFATRATENYIRAY/06.jpeg", reponse: "MAVESATRA" },
+                  { image: "IMG/SARYEFATRATENYIRAY/07.jpeg", reponse: "FOTOANA" }
+                ];
+            
+                // Index de la question actuelle
+                let currentQuestionDEUX = 0;
+                const imgElementDEUX = document.getElementById("sary");
+                const inputFieldDEUX = document.getElementById("valiny");
+            
+                // Fonction pour afficher la question suivante
+                function afficherQuestionSuivanteUN() {
+                  const reponseUtilisateurDEUX = inputFieldDEUX.value.toUpperCase();
+                  if (reponseUtilisateurDEUX === questionsDEUX[currentQuestionDEUX].reponse) {
+                    // Réponse correcte, passer à la question suivante
+                    currentQuestionDEUX++;
+                    AudioeachSE.src = tableauSE[0].audio;
+                    if (currentQuestionDEUX < questionsDEUX.length) {
+                      imgElementDEUX.src = questionsDEUX[currentQuestionDEUX].image;
+                      inputFieldDEUX.value = "";
+                    } 
+                    else {
+                      // Fin du quizz
+                      testfin()
+                    }
+                  } 
+                  else {
+                    // Réponse incorrecte
+                    imgElementDEUX.src = questionsDEUX[currentQuestionDEUX].image;
+                    inputFieldDEUX.value = "";
+                  }
+                }
+            
+                // Ajouter un gestionnaire d'événements pour le bouton de validation
+                const submitButtonDEUX = document.getElementById("marina");
+                submitButtonDEUX.addEventListener("click", afficherQuestionSuivanteUN);
+                const formDEUX = document.getElementById('form02');
+                formDEUX.addEventListener('keydown', function(event) {
+                  if (event.key === 'Enter') {
+                    event.preventDefault(); // empêche le formulaire d'être soumis
+                    submitButtonDEUX.click(); // déclenche le clic sur le bouton
+                  }
+                });
+                
+
+              </script>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
